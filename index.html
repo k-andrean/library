@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Library</title>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Project Books Library</h1>
+        </div>
+        <button class="display-book">Display Books</button>
+        <div class="card-container">
+        
+        </div>
+        <button class="add-book">Add New Books</button>
+        <dialog id="book-dialog">
+            <form id="book-form">
+                <ul>
+                    <li><label for="book-name">Book Name</label></li>
+                    <li><input type="text" id="book-name" name="first-name"></li>
+                    <li><label for="book-author">Book Author</label></li>
+                    <li><input type="text" id="book-author" name="book-author"></li>
+                    <li><label for="book-pages">Book Pages</label></li>
+                    <li><input type="number" id="book-pages" name="book-pages"></li>
+                    <li>Have you read this book before?</li>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="answer" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="answer" value="no">
+                </ul>
+                <button class="confirm-book">Confirm</button>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
