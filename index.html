@@ -21,16 +21,16 @@
             <form id="book-form">
                 <ul>
                     <li><label for="book-name">Book Name</label></li>
-                    <li><input type="text" id="book-name" name="first-name"></li>
+                    <li><input type="text" id="book-name" name="first-name" required></li>
                     <li><label for="book-author">Book Author</label></li>
-                    <li><input type="text" id="book-author" name="book-author"></li>
+                    <li><input type="text" id="book-author" name="book-author" required></li>
                     <li><label for="book-pages">Book Pages</label></li>
-                    <li><input type="number" id="book-pages" name="book-pages"></li>
+                    <li><input type="number" id="book-pages" name="book-pages" min="1" required></li>
                     <li>Have you read this book before?</li>
                     <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="answer" value="yes">
+                    <input type="radio" id="yes" name="answer" value="yes" required>
                     <label for="no">No</label>
-                    <input type="radio" id="no" name="answer" value="no">
+                    <input type="radio" id="no" name="answer" value="no" required>
                 </ul>
                 <button class="confirm-book">Confirm</button>
             </form>
